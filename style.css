@@ -18,6 +18,7 @@
     padding: 0px 20px;
     height: 134px;
     overflow: hidden;
+    /* gap: 35%; */
 }
 
 .menu {
@@ -43,9 +44,22 @@
 
 }
 
-.logo {
+.logo img {
     width: 395px;
     height: 37px;
+}
+
+@media screen and  (max-width: 425px) {
+    .navcontainer{
+        height: 64px;
+    }
+    .logo img {
+        width: 217px;
+        height: 20px;
+    }
+    .menu{
+        visibility: hidden;
+    }
 }
 
 .container2 {
@@ -358,23 +372,24 @@ footer {
 }
 
 .First-Row {
+    display: flex;
+    justify-content: space-evenly;
     font-family: "Inter", sans-serif;
     font-size: 20px;
     line-height: 28px;
     font-weight: 400;
     text-align: center;
     padding: 18px 0px;
+    text-wrap: nowrap;
+    overflow: hidden;
+    gap: 5px;
 
 }
 
-.First-Row p {
-    text-overflow: clip;
-}
-
-.First-Row span {
+.First-Row :nth-child(even) {
     font-weight: 800;
-
 }
+
 
 .footerlogo {
     filter: invert();
