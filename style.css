@@ -3,11 +3,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Playfair Display", serif;
 }
 
 .container {
     width: 100%;
+    box-sizing: border-box;
 }
 
 .navcontainer {
@@ -49,18 +51,17 @@
     height: 37px;
 }
 
-@media screen and  (max-width: 425px) {
-    .navcontainer{
-        height: 64px;
-    }
-    .logo img {
-        width: 217px;
-        height: 20px;
-    }
-    .menu{
-        visibility: hidden;
-    }
+
+
+.logo img {
+    width: 217px;
+    height: 20px;
 }
+
+.menu {
+    /* visibility: hidden; */
+}
+
 
 .container2 {
     width: 100%;
@@ -73,11 +74,14 @@
 }
 
 .hero {
-    width: 640px;
+    max-width: 640px;
+    width: 100%;
     text-align: center;
     margin: 25px 0px 25px 0px;
 
 }
+
+
 
 .hero>:nth-child(1) {
 
@@ -92,9 +96,16 @@
     line-height: 170%;
     letter-spacing: 3px;
 }
+.yellowpic  {
+    max-width: 1440px;
+    width: 100%;
+max-height: 900px;
+height: auto;
+}
 
 .line {
-    width: 640px;
+    max-width: 640px;
+    width: 100%;
     border: 1px solid #000000;
 }
 
@@ -102,10 +113,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 640px;
+    max-width: 640px;
+    width: 100%;
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+
 
 .aurthordetails {
     display: flex;
@@ -125,21 +139,39 @@
     border: 2px solid #EAEAEA;
     border-collapse: collapse;
     border-radius: 4px;
+    
 }
-
-.aurthorsocials>div {
-    padding: 12px 25px;
+.aurthorpp img {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+}
+.aurthorsocials div img {
+  height: 20px;
+  width: 20px;
+}
+.aurthorsocials2 div img {
+    height: 20px;
+    width: 20px;
+  }
+.aurthorsocials div {
+    padding: 17px 46px;
 }
 
 .aurthorsocials :nth-child(2) {
+    border-left: 2px solid #EAEAEA;
+}
+.aurthorsocials :nth-child(3) {
     border-left: 2px solid #EAEAEA;
 }
 
 .content {
     font-size: 20px;
     font-weight: 400;
-    width: 640px;
+    max-width: 640px;
+    width: 100%;
 }
+
 
 .content h2 {
     font-family: "Inter", sans-serif;
@@ -150,7 +182,12 @@
 .content p {
     margin: 52px 0px;
 }
-
+.img2 img {
+    max-width: 854px;
+    width: 100%;
+max-height: 570px;
+height: auto;
+}
 .img2>figcaption {
     font-family: "Inter", sans-serif;
     font-weight: 500;
@@ -162,11 +199,14 @@
     border-radius: 50px;
 }
 
+
 .content2 {
-    width: 640px;
+    max-width: 640px;
+    width: 100%;
     font-size: 20px;
     font-weight: 400;
 }
+
 
 .content2 p {
     margin: 52px 0px;
@@ -187,34 +227,36 @@
 }
 
 .aurthorsocials2 {
-    display: flex;
-    width: 640px;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+    
     border: 2px solid #EAEAEA;
     border-radius: 4px;
     box-shadow: #00000014 0px 4px 4px;
 }
 
-.aurthorsocials2 div {
-    display: flex;
-    /* height: 64px; */
-    justify-content: center;
-    align-items: center;
+
+.aurthorsocials2 > div {
+   display: flex;
+   align-items: center;
+   justify-content: center;
     padding: 19px 70px;
 }
 
-.aurthorsocials2 div:nth-child(2) {
+.twitterdiv {
+    border-left: 2px solid #EAEAEA;
+}
+.whatsappicon1 {
     border-left: 2px solid #EAEAEA;
 }
 
-.aurthorsocials2 p:nth-child(2) {
+.aurthorsocials2 p  {
     padding-left: 10px;
 }
 
 .content3 {
     margin: 25px 0px;
-    width: 640px;
+    max-width: 640px;
+    width: 100%;
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -232,7 +274,8 @@
 }
 
 .container-4 div {
-    width: 640px;
+    max-width: 640px;
+    width: 100%;
     border: 1px dotted #000000;
 }
 
@@ -244,12 +287,15 @@
 }
 
 .aboutaurthor {
-    width: 640px;
+    max-width: 640px;
+    width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 10px;
     margin-top: 10px;
 }
+
 
 .mika {
     font-weight: bold;
@@ -296,7 +342,7 @@
     line-height: 120%;
 }
 
-.container2>h1 {
+.container2 >h1 {
     line-height: 100%;
     font-size: 44px;
     font-weight: 700;
@@ -306,7 +352,8 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 640px;
+    max-width: 640px;
+    width: 100%;
     height: 313px;
     justify-content: center;
     align-items: center;
@@ -316,6 +363,7 @@
     margin: 111px 0px;
 
 }
+
 
 .newslater h2 {
     font-size: 36px;
@@ -334,20 +382,25 @@
 .emailinput {
     display: flex;
     border: 1px solid black;
-    width: 520px;
+    max-width: 520px;
+    width: 100%;
+    /* width: 100%; */
     height: 54px;
 
 
 }
 
+
 .emailinput input {
-    width: 413px;
+    max-width: 413px;
+    width: 70%;
     height: 54px;
     border: 1px solid black;
 }
 
 .emailinput button {
-    width: 139px;
+    max-width: 139px;
+    width: 30%;
     height: 54px;
     color: white;
     background-color: black;
@@ -359,6 +412,7 @@
     letter-spacing: 5%;
     text-transform: uppercase;
 }
+
 
 .emailinput input::placeholder {
     padding: 15px;
@@ -395,7 +449,14 @@ footer {
     filter: invert();
     margin: 105px 0px 25px 0px;
 }
+.footerlogo img{
+    max-width: 290.9147644042969px;
+    width: 100%;
+height: 27.296001434326172px;
+height: auto;
 
+
+}
 .footercontainer {
     width: 100%;
     display: flex;
@@ -404,12 +465,14 @@ footer {
 }
 
 .footercontent {
-    width: 460px;
+    max-width: 460px;
+    width: 100%;
     text-align: center;
     font-size: 16px;
     line-height: 140%;
     font-weight: 400;
 }
+
 
 .footerlinks {
     display: flex;
@@ -433,3 +496,53 @@ footer {
     line-height: 140%;
     font-weight: 500;
 }
+
+@media screen and (max-width: 800px) {
+    
+    .navcontainer {
+        height: 64px;
+    }
+    
+    .hero , .aurthor,  .content , .line , .content2 ,  .content3 , .aboutaurthor , .newslater ,  .emailinput input,  .emailinput button ,   .footercontent , .footerlogo img {
+    
+        padding: 0px 20px;
+    }
+    .aurthor{
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+        margin: 24px 0px;
+        
+    }
+    .aurthordetails {
+        width: 100%;
+    }
+    
+    .aurthorsocials{
+        align-self: center;
+        width: 100%;
+        height: 54px;
+    }
+   .menu{
+    display: none;
+   }
+   .aurthorsocials2 {
+    width: 100%;
+    height: 54px;
+    
+}
+.aurthorsocials2 div {
+    padding: 17px 46px;
+}
+.aurthorsocials2 p{
+    display: none;
+}
+}
+@media screen and (min-width: 800px) {
+    .whatsappicon   {
+        display: none;
+    }
+   .whatsappicon1 {
+        display: none !important;
+    }
+    }
